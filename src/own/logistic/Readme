@@ -1,0 +1,5 @@
+Para compilarlo
+javac -classpath lib/jade.jar -d classes src/own/**/*.java src/own/logistic/*.java
+
+Para correr este ejemplo EN CMD!!
+java -cp lib/jade.jar;classes jade.Boot -gui -port 3100 -agents logistic:logistic.LogisticAgent

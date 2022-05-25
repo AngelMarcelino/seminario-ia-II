@@ -1,0 +1,28 @@
+Hands on 4 & 5 -> src/own/slr
+Hands on 6 -> src/own/mlr
+Hands on 7 -> src/own/logistic
+Hands on 8 -> src/own/knn
+
+1. run jade
+
+java -cp .\lib\jade.jar jade.Boot -gui -port 3100
+
+2. compile ping agent
+
+javac -classpath lib/jade.jar -d classes src/examples/PingAgent/*.java
+
+3. Start agents using the command line
+
+java -cp lib\jade.jar;classes jade.Boot -gui -port 3100 -agents ping1:examples.PingAgent.PingAgent 
+
+4. Repo
+https://github.com/joseavinatecmm/agent-repo
+
+
+
+current command
+
+javac -classpath lib/jade.jar -sourcepath src/own -d classes src/own/slrgrad/*.java
+java -cp lib\jade.jar;classes jade.Boot -gui -port 3100 -agents ping1:slrgrad.SLRGRADAgent
+
+java -cp lib\jade.jar;classes jade.Boot -gui -port 3100 -agents ping1:mlr.MLRAgent

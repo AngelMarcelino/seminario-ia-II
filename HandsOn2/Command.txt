@@ -1,0 +1,1 @@
+java -cp libjade.jar;classes jade.Boot -gui -port 3100 -agents ping1slr.SLRAgent
